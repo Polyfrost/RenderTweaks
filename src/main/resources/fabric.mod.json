@@ -1,19 +1,21 @@
 {
 	"schemaVersion": 1,
-	"id": "rendertweaks",
+	"id": "${id}",
 	"version": "${version}",
-	"name": "Render Tweaks",
-	"description": "Random tweaks that I thought were cool",
+	"name": "${name}",
+	"description": "${description}",
 	"authors": [
 		"Microcontrollers"
 	],
+	"contributors": [
+	],
 	"contact": {
-		"homepage": "https://modrinth.com/mod/rendertweaks",
-		"sources": "https://github.com/MicrocontrollersDev/RenderTweaks",
-		"issues": "https://github.com/MicrocontrollersDev/RenderTweaks/issues"
+		"homepage": "${modrinth}",
+		"sources": "${source}",
+		"issues": "${issues}"
 	},
-	"license": "LGPLv3",
-	"icon": "assets/rendertweaks/icon.png",
+	"license": "${license}",
+	"icon": "assets/${id}/icon.png",
 	"environment": "client",
 	"entrypoints": {
 		"main": [
@@ -24,20 +26,27 @@
 		]
 	},
 	"mixins": [
-		"rendertweaks.mixins.json"
+		"${id}.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15",
-		"minecraft": ">=1.20",
+		"fabricloader": ">=0.16.10",
+		"minecraft": "${mcdep}",
 		"java": ">=17",
 		"fabric-api": "*",
 		"yet_another_config_lib_v3": "*"
 	},
+	"breaks": {
+		"feather": "*",
+		"labymod": "*",
+		"ichor": "*"
+	},
 	"custom": {
 		"modmenu": {
 			"links": {
-				"modmenu.discord": "https://discord.gg/rejfv9kFJj",
-				"modmenu.modrinth": "https://modrinth.com/mod/rendertweaks"
+				"modmenu.kofi": "${kofi}",
+				"modmenu.discord": "${discord}",
+				"modmenu.modrinth": "${modrinth}",
+				"modmenu.curseforge": "${curseforge}"
 			},
 			"update_checker": true
 		}
