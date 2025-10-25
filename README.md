@@ -28,7 +28,7 @@ All color options have full customizability, including chroma.
 - Disable Fishing Lines
 - Fishing Line Color
 
-### World Border 
+### World Border (modern only)
 
 For all three stages, stationary, growing, and shrinking (individually customizable)
 - Disable World Border
