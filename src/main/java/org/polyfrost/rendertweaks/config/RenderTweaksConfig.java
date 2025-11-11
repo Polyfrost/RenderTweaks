@@ -7,6 +7,8 @@ import org.polyfrost.oneconfig.api.config.v1.Config;
 public class RenderTweaksConfig extends Config {
     public RenderTweaksConfig() {
         super(RenderTweaks.ID + ".json", RenderTweaks.NAME, Category.QOL);
+
+        loadFrom("patcher.toml");
     }
 
     @Switch(
